@@ -1,0 +1,158 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Wed Jun 07 00:24:30 2017
+| Host         : DRIVER-01 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file zsys_wrapper_methodology_drc_routed.rpt -rpx zsys_wrapper_methodology_drc_routed.rpx
+| Design       : zsys_wrapper
+| Device       : xc7z010clg225-1
+| Speed File   : -1
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 22
++-----------+----------+----------------------------------------------------+------------+
+| Rule      | Severity | Description                                        | Violations |
++-----------+----------+----------------------------------------------------+------------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain    | 2          |
+| TIMING-2  | Warning  | Invalid primary clock source pin                   | 1          |
+| TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                  | 1          |
+| TIMING-14 | Warning  | LUT on the clock tree                              | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                      | 14         |
+| XDCB-1    | Warning  | Runtime intensive exceptions                       | 2          |
++-----------+----------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell zsys_i/video_in/axis_data_fifo_0/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_wr_reg2_reg in site SLICE_X29Y12 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell zsys_i/video_in/axis_data_fifo_0/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.garst_sync[1].arst_sync_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell zsys_i/video_in/axis_data_fifo_0/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[3].rd_rst_inst/Q_reg_reg[0] in site SLICE_X28Y12 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell zsys_i/video_in/axis_data_fifo_0/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.garst_sync_ic[1].rd_rst_wr_inst/Q_reg_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-2#1 Warning
+Invalid primary clock source pin  
+A primary clock zsys_i/video_out/clk_wiz_1/inst/clk_in1 is created on an inappropriate pin zsys_i/video_out/clk_wiz_1/inst/clk_in1. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-4#1 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock zsys_i/video_out/clk_wiz_1/inst/clk_in1 is defined downstream of clock clk_fpga_1 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT zsys_i/video_in/csi2_d_phy_rx_0/U0/clock_system_inst/dly_gen.clk_inv_gen.BUFG_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on csi_d_lp_n[0] relative to clock(s) VIRTUAL_pclk 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on csi_d_lp_p[0] relative to clock(s) VIRTUAL_pclk 
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on csi_d_n[0] relative to clock(s) csi_clk 
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on csi_d_n[1] relative to clock(s) csi_clk 
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on csi_d_p[0] relative to clock(s) csi_clk 
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on csi_d_p[1] relative to clock(s) csi_clk 
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_clk_n relative to clock(s) VIRTUAL_clk_out3_zsys_clk_wiz_1_0 
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_clk_p relative to clock(s) VIRTUAL_clk_out3_zsys_clk_wiz_1_0 
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_data_n[0] relative to clock(s) VIRTUAL_clk_out3_zsys_clk_wiz_1_0 
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_data_n[1] relative to clock(s) VIRTUAL_clk_out3_zsys_clk_wiz_1_0 
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_data_n[2] relative to clock(s) VIRTUAL_clk_out3_zsys_clk_wiz_1_0 
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_data_p[0] relative to clock(s) VIRTUAL_clk_out3_zsys_clk_wiz_1_0 
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_data_p[1] relative to clock(s) VIRTUAL_clk_out3_zsys_clk_wiz_1_0 
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_data_p[2] relative to clock(s) VIRTUAL_clk_out3_zsys_clk_wiz_1_0 
+Related violations: <none>
+
+XDCB-1#1 Warning
+Runtime intensive exceptions  
+The following constraint contains more than 1000 objects. To preserve runtime and memory performance, it is recommended to include minimum number of objects. Check whether this list can be simplified.
+-from = expands to 1024 design objects. 
+-to = expands to 1256 design objects. 
+set_false_path -from [get_pins -leaf -of_objects [get_cells -hier *ram_clk_config* -filter is_sequential] -filter NAME=~*/C] -to [get_pins -leaf -of_o...
+c:/Users/John/Documents/ZynqBerry/LVS_BASE/LVS_BASE.srcs/sources_1/bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0.xdc (Line: 62)
+Related violations: <none>
+
+XDCB-1#2 Warning
+Runtime intensive exceptions  
+The following constraint contains more than 1000 objects. To preserve runtime and memory performance, it is recommended to include minimum number of objects. Check whether this list can be simplified.
+-to = expands to 1776 design objects. 
+set_max_delay -datapath_only -from [get_clocks -of [get_ports -scoped_to_current_instance s_axi_aclk]] -to [all_registers -clock [get_clocks -of [get_...
+c:/Users/John/Documents/ZynqBerry/LVS_BASE/LVS_BASE.srcs/sources_1/bd/zsys/ip/zsys_v_tc_0_0/zsys_v_tc_0_0_clocks.xdc (Line: 6)
+Related violations: <none>
+
+

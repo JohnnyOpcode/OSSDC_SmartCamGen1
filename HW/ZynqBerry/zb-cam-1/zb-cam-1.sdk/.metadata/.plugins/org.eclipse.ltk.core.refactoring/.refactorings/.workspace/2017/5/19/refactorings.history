@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ZinqBerry_HW&apos;" deleteContents="true" description="Delete resource &apos;ZinqBerry_HW&apos;" element1="/ZinqBerry_HW" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1494509220304"/>
+</session>
