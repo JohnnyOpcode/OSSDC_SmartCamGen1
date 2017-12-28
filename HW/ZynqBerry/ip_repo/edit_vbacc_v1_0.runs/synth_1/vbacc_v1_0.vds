@@ -1,0 +1,168 @@
+#-----------------------------------------------------------
+# Vivado v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Thu Sep 21 19:41:03 2017
+# Process ID: 19760
+# Current directory: C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/edit_vbacc_v1_0.runs/synth_1
+# Command line: vivado.exe -log vbacc_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vbacc_v1_0.tcl
+# Log file: C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/edit_vbacc_v1_0.runs/synth_1/vbacc_v1_0.vds
+# Journal file: C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/edit_vbacc_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vbacc_v1_0.tcl -notrace
+Command: synth_design -top vbacc_v1_0 -part xc7z010clg225-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9256 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 353.785 ; gain = 80.121
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2048] function clogb2 does not always return a value [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:135]
+	Parameter C_S00_AXI_CFG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_CFG_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S00_AXIS_VIDEO_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_STATUS_TARGET_SLAVE_BASE_ADDR bound to: 32'b01000000000000000000000000000000 
+	Parameter C_M00_AXI_STATUS_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M00_AXI_STATUS_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_STATUS_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_STATUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_STATUS_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_STATUS_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_STATUS_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_STATUS_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_STATUS_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXIS_VIDEO_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_VIDEO_START_COUNT bound to: 32 - type: integer 
+WARNING: [Synth 8-506] null port 'm00_axi_status_awuser' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:90]
+WARNING: [Synth 8-506] null port 'm00_axi_status_wuser' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:96]
+WARNING: [Synth 8-506] null port 'm00_axi_status_buser' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:101]
+WARNING: [Synth 8-506] null port 'm00_axi_status_aruser' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:113]
+WARNING: [Synth 8-506] null port 'm00_axi_status_ruser' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:120]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'vbacc_v1_0_S00_AXI_CFG' declared at 'C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:5' bound to instance 'vbacc_v1_0_S00_AXI_CFG_inst' of component 'vbacc_v1_0_S00_AXI_CFG' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_S00_AXI_CFG' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:1239]
+INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:5941]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:1237]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:5940]
+INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_S00_AXI_CFG' (1#1) [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:86]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vbacc_v1_0_S00_AXIS_VIDEO' declared at 'C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:5' bound to instance 'vbacc_v1_0_S00_AXIS_VIDEO_inst' of component 'vbacc_v1_0_S00_AXIS_VIDEO' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:296]
+INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_S00_AXIS_VIDEO' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:38]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element write_pointer_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[0].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[1].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[2].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[3].stream_data_fifo_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_S00_AXIS_VIDEO' (2#1) [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:38]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+WARNING: [Synth 8-506] null port 'M_AXI_AWUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:211]
+WARNING: [Synth 8-506] null port 'M_AXI_WUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:217]
+WARNING: [Synth 8-506] null port 'M_AXI_BUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:222]
+WARNING: [Synth 8-506] null port 'M_AXI_ARUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:234]
+WARNING: [Synth 8-506] null port 'M_AXI_RUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:241]
+INFO: [Synth 8-3491] module 'vbacc_v1_0_M00_AXI_STATUS' declared at 'C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:5' bound to instance 'vbacc_v1_0_M00_AXI_STATUS_inst' of component 'vbacc_v1_0_M00_AXI_STATUS' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:311]
+INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_M00_AXI_STATUS' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:160]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+WARNING: [Synth 8-506] null port 'M_AXI_AWUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:73]
+WARNING: [Synth 8-506] null port 'M_AXI_WUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:89]
+WARNING: [Synth 8-506] null port 'M_AXI_BUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:101]
+WARNING: [Synth 8-506] null port 'M_AXI_ARUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:133]
+WARNING: [Synth 8-506] null port 'M_AXI_RUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:150]
+WARNING: [Synth 8-3919] null assignment ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:269]
+WARNING: [Synth 8-3919] null assignment ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:276]
+WARNING: [Synth 8-3919] null assignment ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:294]
+INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:740]
+WARNING: [Synth 8-6014] Unused sequential element sig_one_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element sig_one_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:638]
+INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_M00_AXI_STATUS' (3#1) [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:160]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vbacc_v1_0_M00_AXIS_VIDEO' declared at 'C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:5' bound to instance 'vbacc_v1_0_M00_AXIS_VIDEO_inst' of component 'vbacc_v1_0_M00_AXIS_VIDEO' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:375]
+INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_M00_AXIS_VIDEO' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:40]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element sig_one_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_M00_AXIS_VIDEO' (4#1) [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0' (5#1) [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:135]
+WARNING: [Synth 8-3331] design vbacc_v1_0_M00_AXI_STATUS has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design vbacc_v1_0_M00_AXI_STATUS has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design vbacc_v1_0_M00_AXI_STATUS has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design vbacc_v1_0_M00_AXI_STATUS has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[31]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[30]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[29]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[28]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[27]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[26]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[25]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[24]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[23]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[22]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[21]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[20]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[19]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[18]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[17]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[16]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[15]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[14]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[13]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[12]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[11]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[10]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[9]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[8]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[7]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[6]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[5]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[4]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[3]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[2]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[1]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TDATA[0]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TSTRB[3]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TSTRB[2]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TSTRB[1]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXIS_VIDEO has unconnected port S_AXIS_TSTRB[0]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXI_CFG has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXI_CFG has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXI_CFG has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXI_CFG has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXI_CFG has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXI_CFG has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 2446.938 ; gain = 2173.273
+---------------------------------------------------------------------------------
+Failed to open file C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/edit_vbacc_v1_0.runs/synth_1/.Xil/Vivado-19760-DEV-WIN10/elab.rtd.  Please check the path and rerun synthesis.
+invalid command name "NULL"
+19 Infos, 75 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 21 19:41:56 2017...

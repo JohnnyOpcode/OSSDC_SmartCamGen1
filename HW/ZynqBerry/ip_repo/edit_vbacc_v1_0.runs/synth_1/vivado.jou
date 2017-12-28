@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Thu Sep 21 19:41:03 2017
+# Process ID: 19760
+# Current directory: C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/edit_vbacc_v1_0.runs/synth_1
+# Command line: vivado.exe -log vbacc_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vbacc_v1_0.tcl
+# Log file: C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/edit_vbacc_v1_0.runs/synth_1/vbacc_v1_0.vds
+# Journal file: C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/edit_vbacc_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vbacc_v1_0.tcl -notrace
