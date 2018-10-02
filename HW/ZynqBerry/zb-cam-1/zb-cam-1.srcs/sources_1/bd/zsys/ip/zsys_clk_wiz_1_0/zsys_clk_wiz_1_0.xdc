@@ -53,7 +53,7 @@
 # commented constraints can be used in the top level xdc 
 #----------------------------------------------------------------
 # Connect to input port when clock capable pin is selected for input
-create_clock -period 9.75 [get_ports clk_in1]
+create_clock -period 9.750 [get_ports clk_in1]
 set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.0975
 
 

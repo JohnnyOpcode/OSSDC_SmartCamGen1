@@ -16,167 +16,184 @@
 # XDC: imports/constraints/_i_timing.xdc
 
 # Block Designs: bd/zsys/zsys.bd
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys || ORIG_REF_NAME==zsys}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys || ORIG_REF_NAME==zsys} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_axi_reg32_0_0/zsys_axi_reg32_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axi_reg32_0_0 || ORIG_REF_NAME==zsys_axi_reg32_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axi_reg32_0_0 || ORIG_REF_NAME==zsys_axi_reg32_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_processing_system7_0_0 || ORIG_REF_NAME==zsys_processing_system7_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_processing_system7_0_0 || ORIG_REF_NAME==zsys_processing_system7_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_processing_system7_0_axi_periph_0/zsys_processing_system7_0_axi_periph_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_processing_system7_0_axi_periph_0 || ORIG_REF_NAME==zsys_processing_system7_0_axi_periph_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_processing_system7_0_axi_periph_0 || ORIG_REF_NAME==zsys_processing_system7_0_axi_periph_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_rst_processing_system7_0_50M_0/zsys_rst_processing_system7_0_50M_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_rst_processing_system7_0_50M_0 || ORIG_REF_NAME==zsys_rst_processing_system7_0_50M_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_rst_processing_system7_0_50M_0 || ORIG_REF_NAME==zsys_rst_processing_system7_0_50M_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_axi_interconnect_0_0/zsys_axi_interconnect_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axi_interconnect_0_0 || ORIG_REF_NAME==zsys_axi_interconnect_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axi_interconnect_0_0 || ORIG_REF_NAME==zsys_axi_interconnect_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_0 || ORIG_REF_NAME==zsys_axi_vdma_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_0 || ORIG_REF_NAME==zsys_axi_vdma_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axis_data_fifo_0_0 || ORIG_REF_NAME==zsys_axis_data_fifo_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axis_data_fifo_0_0 || ORIG_REF_NAME==zsys_axis_data_fifo_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_axis_raw_demosaic_0_0/zsys_axis_raw_demosaic_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axis_raw_demosaic_0_0 || ORIG_REF_NAME==zsys_axis_raw_demosaic_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axis_raw_demosaic_0_0 || ORIG_REF_NAME==zsys_axis_raw_demosaic_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_axis_raw_unpack_0_0/zsys_axis_raw_unpack_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axis_raw_unpack_0_0 || ORIG_REF_NAME==zsys_axis_raw_unpack_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axis_raw_unpack_0_0 || ORIG_REF_NAME==zsys_axis_raw_unpack_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_axis_video_resize_0_0/zsys_axis_video_resize_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axis_video_resize_0_0 || ORIG_REF_NAME==zsys_axis_video_resize_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axis_video_resize_0_0 || ORIG_REF_NAME==zsys_axis_video_resize_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/zsys_csi2_d_phy_rx_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_csi2_d_phy_rx_0_0 || ORIG_REF_NAME==zsys_csi2_d_phy_rx_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_csi2_d_phy_rx_0_0 || ORIG_REF_NAME==zsys_csi2_d_phy_rx_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_csi_to_axis_0_0/zsys_csi_to_axis_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_csi_to_axis_0_0 || ORIG_REF_NAME==zsys_csi_to_axis_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_csi_to_axis_0_0 || ORIG_REF_NAME==zsys_csi_to_axis_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_proc_sys_reset_0_0 || ORIG_REF_NAME==zsys_proc_sys_reset_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_proc_sys_reset_0_0 || ORIG_REF_NAME==zsys_proc_sys_reset_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_Video_IO_2_HDMI_TMDS_0_0/zsys_Video_IO_2_HDMI_TMDS_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_Video_IO_2_HDMI_TMDS_0_0 || ORIG_REF_NAME==zsys_Video_IO_2_HDMI_TMDS_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_Video_IO_2_HDMI_TMDS_0_0 || ORIG_REF_NAME==zsys_Video_IO_2_HDMI_TMDS_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_axi_mem_intercon_0/zsys_axi_mem_intercon_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axi_mem_intercon_0 || ORIG_REF_NAME==zsys_axi_mem_intercon_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axi_mem_intercon_0 || ORIG_REF_NAME==zsys_axi_mem_intercon_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_1 || ORIG_REF_NAME==zsys_axi_vdma_0_1}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_1 || ORIG_REF_NAME==zsys_axi_vdma_0_1} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_axis_fb_conv_0_0/zsys_axis_fb_conv_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axis_fb_conv_0_0 || ORIG_REF_NAME==zsys_axis_fb_conv_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_axis_fb_conv_0_0 || ORIG_REF_NAME==zsys_axis_fb_conv_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_clk_wiz_1_0 || ORIG_REF_NAME==zsys_clk_wiz_1_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_clk_wiz_1_0 || ORIG_REF_NAME==zsys_clk_wiz_1_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_v_axi4s_vid_out_0_0/zsys_v_axi4s_vid_out_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_v_axi4s_vid_out_0_0 || ORIG_REF_NAME==zsys_v_axi4s_vid_out_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_v_axi4s_vid_out_0_0 || ORIG_REF_NAME==zsys_v_axi4s_vid_out_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_v_tc_0_0/zsys_v_tc_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_v_tc_0_0 || ORIG_REF_NAME==zsys_v_tc_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_v_tc_0_0 || ORIG_REF_NAME==zsys_v_tc_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_xlconcat_0_0/zsys_xlconcat_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_xlconcat_0_0 || ORIG_REF_NAME==zsys_xlconcat_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_xlconcat_0_0 || ORIG_REF_NAME==zsys_xlconcat_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_xlslice_0_0/zsys_xlslice_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_xlslice_0_0 || ORIG_REF_NAME==zsys_xlslice_0_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_xlslice_0_0 || ORIG_REF_NAME==zsys_xlslice_0_0} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_xbar_0/zsys_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_xbar_0 || ORIG_REF_NAME==zsys_xbar_0}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_xbar_0 || ORIG_REF_NAME==zsys_xbar_0} -quiet] -quiet
 
-# IP: bd/zsys/ip/zsys_auto_pc_0/zsys_auto_pc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_0 || ORIG_REF_NAME==zsys_auto_pc_0}]
+# IP: bd/zsys/ip/zsys_auto_pc_6/zsys_auto_pc_6.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_6 || ORIG_REF_NAME==zsys_auto_pc_6} -quiet] -quiet
 
-# IP: bd/zsys/ip/zsys_auto_us_0/zsys_auto_us_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_us_0 || ORIG_REF_NAME==zsys_auto_us_0}]
+# IP: bd/zsys/ip/zsys_auto_pc_5/zsys_auto_pc_5.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_5 || ORIG_REF_NAME==zsys_auto_pc_5} -quiet] -quiet
 
-# IP: bd/zsys/ip/zsys_auto_pc_1/zsys_auto_pc_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_1 || ORIG_REF_NAME==zsys_auto_pc_1}]
+# IP: bd/zsys/ip/zsys_auto_pc_4/zsys_auto_pc_4.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_4 || ORIG_REF_NAME==zsys_auto_pc_4} -quiet] -quiet
+
+# IP: bd/zsys/ip/zsys_auto_pc_3/zsys_auto_pc_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_3 || ORIG_REF_NAME==zsys_auto_pc_3} -quiet] -quiet
 
 # IP: bd/zsys/ip/zsys_auto_pc_2/zsys_auto_pc_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_2 || ORIG_REF_NAME==zsys_auto_pc_2}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_2 || ORIG_REF_NAME==zsys_auto_pc_2} -quiet] -quiet
+
+# IP: bd/zsys/ip/zsys_auto_pc_7/zsys_auto_pc_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_7 || ORIG_REF_NAME==zsys_auto_pc_7} -quiet] -quiet
+
+# IP: bd/zsys/ip/zsys_auto_pc_1/zsys_auto_pc_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_1 || ORIG_REF_NAME==zsys_auto_pc_1} -quiet] -quiet
+
+# IP: bd/zsys/ip/zsys_auto_pc_0/zsys_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zsys_auto_pc_0 || ORIG_REF_NAME==zsys_auto_pc_0} -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_processing_system7_0_0/zsys_processing_system7_0_0.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_processing_system7_0_0 || ORIG_REF_NAME==zsys_processing_system7_0_0}] {/inst }]/inst ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_processing_system7_0_0 || ORIG_REF_NAME==zsys_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_rst_processing_system7_0_50M_0/zsys_rst_processing_system7_0_50M_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_rst_processing_system7_0_50M_0 || ORIG_REF_NAME==zsys_rst_processing_system7_0_50M_0}] {/U0 }]/U0 ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_rst_processing_system7_0_50M_0 || ORIG_REF_NAME==zsys_rst_processing_system7_0_50M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_rst_processing_system7_0_50M_0/zsys_rst_processing_system7_0_50M_0.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_rst_processing_system7_0_50M_0 || ORIG_REF_NAME==zsys_rst_processing_system7_0_50M_0}] {/U0 }]/U0 ]]
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_rst_processing_system7_0_50M_0 || ORIG_REF_NAME==zsys_rst_processing_system7_0_50M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_rst_processing_system7_0_50M_0/zsys_rst_processing_system7_0_50M_0_ooc.xdc
 
 # XDC: bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_0 || ORIG_REF_NAME==zsys_axi_vdma_0_0}] {/U0 }]/U0 ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_0 || ORIG_REF_NAME==zsys_axi_vdma_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0_clocks.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_0 || ORIG_REF_NAME==zsys_axi_vdma_0_0}] {/U0 }]/U0 ]]
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_0 || ORIG_REF_NAME==zsys_axi_vdma_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_axi_vdma_0_0/zsys_axi_vdma_0_0_ooc.xdc
 
 # XDC: bd/zsys/ip/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0_ooc.xdc
 
 # XDC: bd/zsys/ip/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axis_data_fifo_0_0 || ORIG_REF_NAME==zsys_axis_data_fifo_0_0}] {/inst }]/inst ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axis_data_fifo_0_0 || ORIG_REF_NAME==zsys_axis_data_fifo_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0/zsys_axis_data_fifo_0_0_clocks.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axis_data_fifo_0_0 || ORIG_REF_NAME==zsys_axis_data_fifo_0_0}] {/inst }]/inst ]]
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axis_data_fifo_0_0 || ORIG_REF_NAME==zsys_axis_data_fifo_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_csi2_d_phy_rx_0_0/hdl/csi2_d_phy_rx.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_csi2_d_phy_rx_0_0 || ORIG_REF_NAME==zsys_csi2_d_phy_rx_0_0}] {/U0 }]/U0 ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_csi2_d_phy_rx_0_0 || ORIG_REF_NAME==zsys_csi2_d_phy_rx_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_csi_to_axis_0_0/hdl/csi_to_axis.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_csi_to_axis_0_0 || ORIG_REF_NAME==zsys_csi_to_axis_0_0}] {/U0 }]/U0 ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_csi_to_axis_0_0 || ORIG_REF_NAME==zsys_csi_to_axis_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_proc_sys_reset_0_0 || ORIG_REF_NAME==zsys_proc_sys_reset_0_0}] {/U0 }]/U0 ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_proc_sys_reset_0_0 || ORIG_REF_NAME==zsys_proc_sys_reset_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_proc_sys_reset_0_0 || ORIG_REF_NAME==zsys_proc_sys_reset_0_0}] {/U0 }]/U0 ]]
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_proc_sys_reset_0_0 || ORIG_REF_NAME==zsys_proc_sys_reset_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_proc_sys_reset_0_0/zsys_proc_sys_reset_0_0_ooc.xdc
 
 # XDC: bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_1 || ORIG_REF_NAME==zsys_axi_vdma_0_1}] {/U0 }]/U0 ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_1 || ORIG_REF_NAME==zsys_axi_vdma_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1_clocks.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_1 || ORIG_REF_NAME==zsys_axi_vdma_0_1}] {/U0 }]/U0 ]]
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_axi_vdma_0_1 || ORIG_REF_NAME==zsys_axi_vdma_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_axi_vdma_0_1/zsys_axi_vdma_0_1_ooc.xdc
 
 # XDC: bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_clk_wiz_1_0 || ORIG_REF_NAME==zsys_clk_wiz_1_0}] {/inst }]/inst ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_clk_wiz_1_0 || ORIG_REF_NAME==zsys_clk_wiz_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_clk_wiz_1_0 || ORIG_REF_NAME==zsys_clk_wiz_1_0}] {/inst }]/inst ]]
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_clk_wiz_1_0 || ORIG_REF_NAME==zsys_clk_wiz_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_clk_wiz_1_0/zsys_clk_wiz_1_0_ooc.xdc
 
 # XDC: bd/zsys/ip/zsys_v_axi4s_vid_out_0_0/zsys_v_axi4s_vid_out_0_0_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_v_axi4s_vid_out_0_0 || ORIG_REF_NAME==zsys_v_axi4s_vid_out_0_0}] {/inst }]/inst ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_v_axi4s_vid_out_0_0 || ORIG_REF_NAME==zsys_v_axi4s_vid_out_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_v_axi4s_vid_out_0_0/zsys_v_axi4s_vid_out_0_0_ooc.xdc
 
 # XDC: bd/zsys/ip/zsys_v_tc_0_0/zsys_v_tc_0_0_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_v_tc_0_0 || ORIG_REF_NAME==zsys_v_tc_0_0}] {/U0 }]/U0 ]]
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_v_tc_0_0 || ORIG_REF_NAME==zsys_v_tc_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/zsys/ip/zsys_v_tc_0_0/zsys_v_tc_0_0_ooc.xdc
 
 # XDC: bd/zsys/ip/zsys_xbar_0/zsys_xbar_0_ooc.xdc
 
-# XDC: bd/zsys/ip/zsys_auto_pc_0/zsys_auto_pc_0_ooc.xdc
+# XDC: bd/zsys/ip/zsys_auto_pc_6/zsys_auto_pc_6_ooc.xdc
 
-# XDC: bd/zsys/ip/zsys_auto_us_0/zsys_auto_us_0_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zsys_auto_us_0 || ORIG_REF_NAME==zsys_auto_us_0}] {/inst }]/inst ]]
+# XDC: bd/zsys/ip/zsys_auto_pc_5/zsys_auto_pc_5_ooc.xdc
 
-# XDC: bd/zsys/ip/zsys_auto_us_0/zsys_auto_us_0_ooc.xdc
+# XDC: bd/zsys/ip/zsys_auto_pc_4/zsys_auto_pc_4_ooc.xdc
+
+# XDC: bd/zsys/ip/zsys_auto_pc_3/zsys_auto_pc_3_ooc.xdc
+
+# XDC: bd/zsys/ip/zsys_auto_pc_2/zsys_auto_pc_2_ooc.xdc
+
+# XDC: bd/zsys/ip/zsys_auto_pc_7/zsys_auto_pc_7_ooc.xdc
 
 # XDC: bd/zsys/ip/zsys_auto_pc_1/zsys_auto_pc_1_ooc.xdc
 
-# XDC: bd/zsys/ip/zsys_auto_pc_2/zsys_auto_pc_2_ooc.xdc
+# XDC: bd/zsys/ip/zsys_auto_pc_0/zsys_auto_pc_0_ooc.xdc
 
 # XDC: bd/zsys/zsys_ooc.xdc

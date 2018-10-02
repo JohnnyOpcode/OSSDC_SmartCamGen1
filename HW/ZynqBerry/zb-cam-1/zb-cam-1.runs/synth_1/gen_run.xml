@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg225-1" LaunchTime="1496803553">
-  <File Type="RDS-PROPCONSTRS" Name="zsys_wrapper_drc_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg225-1" LaunchTime="1538459810">
   <File Type="PA-TCL" Name="zsys_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="zsys_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="zsys_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="zsys_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="zsys_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="zsys_wrapper_utilization_synth.pb"/>
@@ -12,7 +13,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/zsys/zsys.bd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documents/ZynqBerry/te0726_m_demo1/vivado/te0726_m_demo1.srcs/sources_1/bd/zsys/zsys.bd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ZynqBerry/te0726_m_demo1/vivado/te0726_m_demo1.srcs/sources_1/bd/zsys/zsys.bd"/>
         <Attr Name="ImportTime" Val="1494335544"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -21,16 +22,10 @@
     </File>
     <File Path="$PSRCDIR/sources_1/bd/zsys/hdl/zsys_wrapper.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documents/ZynqBerry/te0726_m_demo1/vivado/te0726_m_demo1.srcs/sources_1/bd/zsys/hdl/zsys_wrapper.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ZynqBerry/te0726_m_demo1/vivado/te0726_m_demo1.srcs/sources_1/bd/zsys/hdl/zsys_wrapper.vhd"/>
         <Attr Name="ImportTime" Val="1494335541"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/LVS_BASE/archive_project_summary.txt">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documents/ZynqBerry/LVS_BASE/archive_project_summary.txt"/>
-        <Attr Name="ImportTime" Val="1494941598"/>
       </FileInfo>
     </File>
     <Config>
@@ -43,7 +38,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/constraints/vivado_target.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documents/ZynqBerry/te0726_m_demo1/constraints/vivado_target.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ZynqBerry/te0726_m_demo1/constraints/vivado_target.xdc"/>
         <Attr Name="ImportTime" Val="1494294494"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -51,42 +46,42 @@
     </File>
     <File Path="$PSRCDIR/constrs_1/imports/constraints/_i_bitgen_common.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documents/ZynqBerry/te0726_m_demo1/constraints/_i_bitgen_common.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ZynqBerry/te0726_m_demo1/constraints/_i_bitgen_common.xdc"/>
         <Attr Name="ImportTime" Val="1494294495"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/constrs_1/imports/constraints/_i_common.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documents/ZynqBerry/te0726_m_demo1/constraints/_i_common.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ZynqBerry/te0726_m_demo1/constraints/_i_common.xdc"/>
         <Attr Name="ImportTime" Val="1494294495"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/constrs_1/imports/constraints/_i_csi.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documents/ZynqBerry/te0726_m_demo1/constraints/_i_csi.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ZynqBerry/te0726_m_demo1/constraints/_i_csi.xdc"/>
         <Attr Name="ImportTime" Val="1494294495"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/constrs_1/imports/constraints/_i_hdmi.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documents/ZynqBerry/te0726_m_demo1/constraints/_i_hdmi.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ZynqBerry/te0726_m_demo1/constraints/_i_hdmi.xdc"/>
         <Attr Name="ImportTime" Val="1494294495"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/constrs_1/imports/constraints/_i_te0726.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documents/ZynqBerry/te0726_m_demo1/constraints/_i_te0726.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ZynqBerry/te0726_m_demo1/constraints/_i_te0726.xdc"/>
         <Attr Name="ImportTime" Val="1494294495"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/constrs_1/imports/constraints/_i_timing.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Documents/ZynqBerry/te0726_m_demo1/constraints/_i_timing.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ZynqBerry/te0726_m_demo1/constraints/_i_timing.xdc"/>
         <Attr Name="ImportTime" Val="1494294495"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

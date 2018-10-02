@@ -44,6 +44,3 @@
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
 ##################################################################################################################################
-## INFO: No CDC present in axi-vdma
-## INFO: When C_PRMRY_IS_ACLK_ASYNC = 0, axi-vdma MANDATORY REQUIREMENT IS THAT ALL axi-vdma CLOCK PORTS MUST BE CONNECTED TO THE SAME CLOCK SOURCE HAVING SAME FREQUENCY i.e. THERE IS ONLY ONE CLOCK-DOMAIN IN THE ENTIRE axi-vdma DESIGN
-## INFO: PLEASE ENSURE THIS REQUIREMENT IS MET.

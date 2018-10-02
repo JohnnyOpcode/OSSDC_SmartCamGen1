@@ -56,10 +56,6 @@
 `timescale 1ns/1ps
 
 module zsys_processing_system7_0_0 (
-CAN0_PHY_TX, 
-CAN0_PHY_RX, 
-CAN1_PHY_TX, 
-CAN1_PHY_RX, 
 GPIO_I, 
 GPIO_O, 
 GPIO_T, 
@@ -248,10 +244,6 @@ PS_SRSTB,
 PS_CLK, 
 PS_PORB 
 );
-output CAN0_PHY_TX;
-input CAN0_PHY_RX;
-output CAN1_PHY_TX;
-input CAN1_PHY_RX;
 input [23 : 0] GPIO_I;
 output [23 : 0] GPIO_O;
 output [23 : 0] GPIO_T;
@@ -440,7 +432,7 @@ input PS_SRSTB;
 input PS_CLK;
 input PS_PORB;
 
-  processing_system7_vip_v1_0_3 #(
+  processing_system7_vip_v1_0_5 #(
     .C_USE_M_AXI_GP0(1),
     .C_USE_M_AXI_GP1(0),
     .C_USE_S_AXI_ACP(0),
@@ -458,7 +450,7 @@ input PS_PORB;
     .C_FCLK_CLK0_FREQ(148.148163),
     .C_FCLK_CLK1_FREQ(102.564102),
     .C_FCLK_CLK2_FREQ(200.0),
-    .C_FCLK_CLK3_FREQ(100.0),
+    .C_FCLK_CLK3_FREQ(12.280701),
 	.C_M_AXI_GP0_ENABLE_STATIC_REMAP(0),
 	.C_M_AXI_GP1_ENABLE_STATIC_REMAP(0),
 	.C_M_AXI_GP0_THREAD_ID_WIDTH (12), 

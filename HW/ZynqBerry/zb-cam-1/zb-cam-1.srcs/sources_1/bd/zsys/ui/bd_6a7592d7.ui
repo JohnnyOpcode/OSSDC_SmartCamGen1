@@ -1,0 +1,51 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port VTC_AXI -pg 1 -y 90 -defaultsOSRD
+preplace port tx_dma_int -pg 1 -y 700 -defaultsOSRD
+preplace port clk_100mhz_in -pg 1 -y 270 -defaultsOSRD
+preplace port VIDEO_OUT_AXI -pg 1 -y 410 -defaultsOSRD
+preplace port hdmi_clk_n -pg 1 -y 640 -defaultsOSRD
+preplace port aclk -pg 1 -y 410 -defaultsOSRD
+preplace port hdmi_clk_p -pg 1 -y 620 -defaultsOSRD
+preplace port CLKWIZ_AXI -pg 1 -y 210 -defaultsOSRD
+preplace port VDMA_AXI -pg 1 -y 390 -defaultsOSRD
+preplace portBus hdmi_data_n -pg 1 -y 600 -defaultsOSRD
+preplace portBus hdmi_data_p -pg 1 -y 580 -defaultsOSRD
+preplace portBus axi_int_aresetn -pg 1 -y 20 -defaultsOSRD
+preplace portBus axi_per_aresetn -pg 1 -y 430 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 3 -y 210 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 2 -y 170 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 1 -y 430 -defaultsOSRD
+preplace inst Video_IO_2_HDMI_TMDS_0 -pg 1 -lvl 4 -y 610 -defaultsOSRD
+preplace inst axis_fb_conv_0 -pg 1 -lvl 2 -y 440 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 240 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -y 410 -defaultsOSRD
+preplace netloc Conn1 1 4 1 NJ
+preplace netloc Conn2 1 0 1 NJ
+preplace netloc Conn3 1 0 2 NJ 90 NJ
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 3 1 1000
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 1 3 410 350 NJ 350 NJ
+preplace netloc video_clk_in_1 1 1 3 440 310 730 590 NJ
+preplace netloc clk_in1_1 1 0 1 NJ
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 1 1 N
+preplace netloc ARESETN_2 1 0 4 NJ 20 NJ 20 NJ 20 1020J
+preplace netloc axis_fb_conv_0_video_out 1 2 1 710
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 1 3 450 30 NJ 30 990
+preplace netloc CLKWIZ_AXI_1 1 0 1 NJ
+preplace netloc clk_wiz_1_locked 1 1 3 380 650 NJ 650 NJ
+preplace netloc axi_vdma_0_mm2s_introut 1 1 4 370J 700 NJ 700 NJ 700 NJ
+preplace netloc clk_wiz_1_clk_out2 1 1 3 400 610 NJ 610 NJ
+preplace netloc aresetn_1 1 0 4 20 330 430 360 720 360 990
+preplace netloc Video_IO_2_HDMI_TMDS_0_hdmi_data_n 1 4 1 NJ
+preplace netloc clk_wiz_1_clk_out3 1 1 3 390 630 NJ 630 NJ
+preplace netloc Video_IO_2_HDMI_TMDS_0_hdmi_clk_n 1 4 1 NJ
+preplace netloc v_tc_0_vtiming_out 1 2 1 N
+preplace netloc aclk_1 1 0 4 30 150 420 10 730 70 1010
+preplace netloc Video_IO_2_HDMI_TMDS_0_hdmi_data_p 1 4 1 NJ
+preplace netloc Video_IO_2_HDMI_TMDS_0_hdmi_clk_p 1 4 1 NJ
+levelinfo -pg 1 0 200 580 860 1170 1340 -top 0 -bot 720
+",
+}
+
