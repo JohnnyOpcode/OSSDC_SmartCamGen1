@@ -3,23 +3,24 @@
     with args -log vbacc_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vbacc_v1_0.tcl
 
 
-****** Vivado v2017.2.1 (64-bit)
-  **** SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
-  **** IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source vbacc_v1_0.tcl -notrace
-Command: synth_design -top vbacc_v1_0 -part xc7z010clg225-1
+Command: synth_design -top vbacc_v1_0 -part xc7z045ffv900-3
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg225'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg225'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-1540] The version limit for your license is '2018.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9256 
+INFO: Helper process launched with PID 80416 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 353.785 ; gain = 80.121
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 419.527 ; gain = 99.473
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-2048] function clogb2 does not always return a value [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:135]
+WARNING: [Synth 8-2048] function clogb2 does not always return a value [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0' [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:135]
 	Parameter C_S00_AXI_CFG_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_CFG_ADDR_WIDTH bound to: 11 - type: integer 
 	Parameter C_S00_AXIS_VIDEO_TDATA_WIDTH bound to: 32 - type: integer 
@@ -35,33 +36,32 @@ INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0' [C:/Users/DEV/Google Drive/
 	Parameter C_M00_AXI_STATUS_BUSER_WIDTH bound to: 0 - type: integer 
 	Parameter C_M00_AXIS_VIDEO_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXIS_VIDEO_START_COUNT bound to: 32 - type: integer 
-WARNING: [Synth 8-506] null port 'm00_axi_status_awuser' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:90]
-WARNING: [Synth 8-506] null port 'm00_axi_status_wuser' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:96]
-WARNING: [Synth 8-506] null port 'm00_axi_status_buser' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:101]
-WARNING: [Synth 8-506] null port 'm00_axi_status_aruser' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:113]
-WARNING: [Synth 8-506] null port 'm00_axi_status_ruser' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:120]
+WARNING: [Synth 8-506] null port 'm00_axi_status_awuser' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:90]
+WARNING: [Synth 8-506] null port 'm00_axi_status_wuser' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:96]
+WARNING: [Synth 8-506] null port 'm00_axi_status_buser' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:101]
+WARNING: [Synth 8-506] null port 'm00_axi_status_aruser' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:113]
+WARNING: [Synth 8-506] null port 'm00_axi_status_ruser' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:120]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-3491] module 'vbacc_v1_0_S00_AXI_CFG' declared at 'C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:5' bound to instance 'vbacc_v1_0_S00_AXI_CFG_inst' of component 'vbacc_v1_0_S00_AXI_CFG' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:266]
-INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_S00_AXI_CFG' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:86]
+INFO: [Synth 8-3491] module 'vbacc_v1_0_S00_AXI_CFG' declared at 'C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:5' bound to instance 'vbacc_v1_0_S00_AXI_CFG_inst' of component 'vbacc_v1_0_S00_AXI_CFG' [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_S00_AXI_CFG' [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:86]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:1239]
-INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:5941]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:1237]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:5940]
-INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_S00_AXI_CFG' (1#1) [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:86]
+INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:1239]
+INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:5941]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:1237]
+INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_S00_AXI_CFG' (1#1) [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXI_CFG.vhd:86]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'vbacc_v1_0_S00_AXIS_VIDEO' declared at 'C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:5' bound to instance 'vbacc_v1_0_S00_AXIS_VIDEO_inst' of component 'vbacc_v1_0_S00_AXIS_VIDEO' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:296]
-INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_S00_AXIS_VIDEO' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:38]
+INFO: [Synth 8-3491] module 'vbacc_v1_0_S00_AXIS_VIDEO' declared at 'C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:5' bound to instance 'vbacc_v1_0_S00_AXIS_VIDEO_inst' of component 'vbacc_v1_0_S00_AXIS_VIDEO' [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:296]
+INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_S00_AXIS_VIDEO' [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:38]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:94]
-WARNING: [Synth 8-6014] Unused sequential element write_pointer_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:133]
+INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element write_pointer_reg was removed.  [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:133]
 WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[0].stream_data_fifo_reg was removed. 
 WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[1].stream_data_fifo_reg was removed. 
 WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[2].stream_data_fifo_reg was removed. 
 WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[3].stream_data_fifo_reg was removed. 
-INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_S00_AXIS_VIDEO' (2#1) [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_S00_AXIS_VIDEO' (2#1) [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_S00_AXIS_VIDEO.vhd:38]
 	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
 	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
 	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -72,13 +72,13 @@ INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_S00_AXIS_VIDEO' (2#1) [
 	Parameter C_M_AXI_WUSER_WIDTH bound to: 0 - type: integer 
 	Parameter C_M_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter C_M_AXI_BUSER_WIDTH bound to: 0 - type: integer 
-WARNING: [Synth 8-506] null port 'M_AXI_AWUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:211]
-WARNING: [Synth 8-506] null port 'M_AXI_WUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:217]
-WARNING: [Synth 8-506] null port 'M_AXI_BUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:222]
-WARNING: [Synth 8-506] null port 'M_AXI_ARUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:234]
-WARNING: [Synth 8-506] null port 'M_AXI_RUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:241]
-INFO: [Synth 8-3491] module 'vbacc_v1_0_M00_AXI_STATUS' declared at 'C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:5' bound to instance 'vbacc_v1_0_M00_AXI_STATUS_inst' of component 'vbacc_v1_0_M00_AXI_STATUS' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:311]
-INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_M00_AXI_STATUS' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:160]
+WARNING: [Synth 8-506] null port 'M_AXI_AWUSER' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:211]
+WARNING: [Synth 8-506] null port 'M_AXI_WUSER' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:217]
+WARNING: [Synth 8-506] null port 'M_AXI_BUSER' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:222]
+WARNING: [Synth 8-506] null port 'M_AXI_ARUSER' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:234]
+WARNING: [Synth 8-506] null port 'M_AXI_RUSER' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:241]
+INFO: [Synth 8-3491] module 'vbacc_v1_0_M00_AXI_STATUS' declared at 'C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:5' bound to instance 'vbacc_v1_0_M00_AXI_STATUS_inst' of component 'vbacc_v1_0_M00_AXI_STATUS' [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:311]
+INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_M00_AXI_STATUS' [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:160]
 	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
 	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
 	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -89,27 +89,21 @@ INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_M00_AXI_STATUS' [C:/Users/DE
 	Parameter C_M_AXI_WUSER_WIDTH bound to: 0 - type: integer 
 	Parameter C_M_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter C_M_AXI_BUSER_WIDTH bound to: 0 - type: integer 
-WARNING: [Synth 8-506] null port 'M_AXI_AWUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:73]
-WARNING: [Synth 8-506] null port 'M_AXI_WUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:89]
-WARNING: [Synth 8-506] null port 'M_AXI_BUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:101]
-WARNING: [Synth 8-506] null port 'M_AXI_ARUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:133]
-WARNING: [Synth 8-506] null port 'M_AXI_RUSER' ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:150]
-WARNING: [Synth 8-3919] null assignment ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:269]
-WARNING: [Synth 8-3919] null assignment ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:276]
-WARNING: [Synth 8-3919] null assignment ignored [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:294]
-INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:740]
-WARNING: [Synth 8-6014] Unused sequential element sig_one_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:464]
-WARNING: [Synth 8-6014] Unused sequential element sig_one_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:638]
-INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_M00_AXI_STATUS' (3#1) [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:160]
+WARNING: [Synth 8-506] null port 'M_AXI_AWUSER' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:73]
+WARNING: [Synth 8-506] null port 'M_AXI_WUSER' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:89]
+WARNING: [Synth 8-506] null port 'M_AXI_BUSER' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:101]
+WARNING: [Synth 8-506] null port 'M_AXI_ARUSER' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:133]
+WARNING: [Synth 8-506] null port 'M_AXI_RUSER' ignored [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:150]
+INFO: [Synth 8-226] default block is never used [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:740]
+INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_M00_AXI_STATUS' (3#1) [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXI_STATUS.vhd:160]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'vbacc_v1_0_M00_AXIS_VIDEO' declared at 'C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:5' bound to instance 'vbacc_v1_0_M00_AXIS_VIDEO_inst' of component 'vbacc_v1_0_M00_AXIS_VIDEO' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:375]
-INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_M00_AXIS_VIDEO' [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:40]
+INFO: [Synth 8-3491] module 'vbacc_v1_0_M00_AXIS_VIDEO' declared at 'C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:5' bound to instance 'vbacc_v1_0_M00_AXIS_VIDEO_inst' of component 'vbacc_v1_0_M00_AXIS_VIDEO' [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:375]
+INFO: [Synth 8-638] synthesizing module 'vbacc_v1_0_M00_AXIS_VIDEO' [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:40]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element sig_one_reg was removed.  [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:230]
-INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_M00_AXIS_VIDEO' (4#1) [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0' (5#1) [C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0_M00_AXIS_VIDEO' (4#1) [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'vbacc_v1_0' (5#1) [C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/vbacc_1.0/hdl/vbacc_v1_0.vhd:135]
 WARNING: [Synth 8-3331] design vbacc_v1_0_M00_AXI_STATUS has unconnected port M_AXI_BID[0]
 WARNING: [Synth 8-3331] design vbacc_v1_0_M00_AXI_STATUS has unconnected port M_AXI_BRESP[0]
 WARNING: [Synth 8-3331] design vbacc_v1_0_M00_AXI_STATUS has unconnected port M_AXI_RID[0]
@@ -157,11 +151,409 @@ WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXI_CFG has unconnected port S_AXI
 WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXI_CFG has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design vbacc_v1_0_S00_AXI_CFG has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 2446.938 ; gain = 2173.273
+Finished Synthesize : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 2647.875 ; gain = 2327.820
 ---------------------------------------------------------------------------------
-Failed to open file C:/Users/DEV/Google Drive/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/edit_vbacc_v1_0.runs/synth_1/.Xil/Vivado-19760-DEV-WIN10/elab.rtd.  Please check the path and rerun synthesis.
-invalid command name "NULL"
-19 Infos, 75 Warnings, 0 Critical Warnings and 1 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 21 19:41:56 2017...
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffv900-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z045ffv900-3
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'vbacc_v1_0_M00_AXI_STATUS'
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'vbacc_v1_0_M00_AXIS_VIDEO'
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "axis_tvalid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mst_exec_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+              init_write |                               01 |                               01
+               init_read |                               10 |                               10
+            init_compare |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'vbacc_v1_0_M00_AXI_STATUS'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+            init_counter |                               01 |                               01
+             send_stream |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'vbacc_v1_0_M00_AXIS_VIDEO'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:53 ; elapsed = 00:03:04 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |vbacc_v1_0_S00_AXI_CFG__GB0  |           1|     30194|
+|2     |vbacc_v1_0_S00_AXI_CFG__GB1  |           1|      8000|
+|3     |vbacc_v1_0_S00_AXI_CFG__GB2  |           1|     10177|
+|4     |vbacc_v1_0_S00_AXI_CFG__GB3  |           1|     12740|
+|5     |vbacc_v1_0_S00_AXI_CFG__GB4  |           1|     15654|
+|6     |vbacc_v1_0_S00_AXI_CFG__GB5  |           1|     19662|
+|7     |vbacc_v1_0_S00_AXI_CFG__GB6  |           1|     24767|
+|8     |vbacc_v1_0_S00_AXI_CFG__GB7  |           1|     21145|
+|9     |vbacc_v1_0_S00_AXI_CFG__GB8  |           1|     19678|
+|10    |vbacc_v1_0_S00_AXI_CFG__GB9  |           1|     20396|
+|11    |vbacc_v1_0_S00_AXI_CFG__GB10 |           1|     20395|
+|12    |vbacc_v1_0__GC0              |           1|      1053|
++------+-----------------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 514   
+	               11 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 512   
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vbacc_v1_0_S00_AXI_CFG 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 513   
+	               11 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 512   
+	   2 Input      1 Bit        Muxes := 5     
+Module vbacc_v1_0_S00_AXIS_VIDEO 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module vbacc_v1_0_M00_AXI_STATUS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 4     
+Module vbacc_v1_0_M00_AXIS_VIDEO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design vbacc_v1_0 has unconnected port s00_axi_cfg_awprot[2]
+WARNING: [Synth 8-3331] design vbacc_v1_0 has unconnected port s00_axi_cfg_awprot[1]
+WARNING: [Synth 8-3331] design vbacc_v1_0 has unconnected port s00_axi_cfg_awprot[0]
+WARNING: [Synth 8-3331] design vbacc_v1_0 has unconnected port s00_axi_cfg_arprot[2]
+WARNING: [Synth 8-3331] design vbacc_v1_0 has unconnected port s00_axi_cfg_arprot[1]
+WARNING: [Synth 8-3331] design vbacc_v1_0 has unconnected port s00_axi_cfg_arprot[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vbacc_v1_0_M00_AXIS_VIDEO_inst/tx_done_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vbacc_v1_0_M00_AXIS_VIDEO_inst/axis_tlast_delay_reg )
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[3]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[4]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[5]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[6]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[7]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[8]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[9]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[10]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[11]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[12]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[13]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[14]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[15]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[16]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[17]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[18]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[19]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[20]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[21]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[22]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[23]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[24]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[25]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[26]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[27]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[28]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[29]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[30]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_araddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_araddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_araddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_araddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_araddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_araddr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_awaddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_awaddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_awaddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_awaddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_awaddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\vbacc_v1_0_M00_AXI_STATUS_inst/axi_awaddr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/read_pointer_reg[1]' (FDRE) to 'i_0/vbacc_v1_0_M00_AXIS_VIDEO_inst/stream_data_out_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (aw_en_reg)
+INFO: [Synth 8-3886] merging instance 'axi_bresp_reg[0]' (FDRE) to 'axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'axi_rresp_reg[0]' (FDRE) to 'axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:13 ; elapsed = 00:04:48 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |vbacc_v1_0_S00_AXI_CFG__GB0  |           1|     17852|
+|2     |vbacc_v1_0_S00_AXI_CFG__GB1  |           1|       849|
+|3     |vbacc_v1_0_S00_AXI_CFG__GB2  |           1|      1069|
+|4     |vbacc_v1_0_S00_AXI_CFG__GB3  |           1|      1349|
+|5     |vbacc_v1_0_S00_AXI_CFG__GB4  |           1|      1646|
+|6     |vbacc_v1_0_S00_AXI_CFG__GB5  |           1|      2068|
+|7     |vbacc_v1_0_S00_AXI_CFG__GB6  |           1|      2557|
+|8     |vbacc_v1_0_S00_AXI_CFG__GB7  |           1|      2179|
+|9     |vbacc_v1_0_S00_AXI_CFG__GB8  |           1|      2008|
+|10    |vbacc_v1_0_S00_AXI_CFG__GB9  |           1|      2153|
+|11    |vbacc_v1_0_S00_AXI_CFG__GB10 |           1|      2165|
+|12    |vbacc_v1_0__GC0              |           1|       455|
++------+-----------------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:14 ; elapsed = 00:04:49 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |vbacc_v1_0_S00_AXI_CFG__GB0  |           1|     17824|
+|2     |vbacc_v1_0_S00_AXI_CFG__GB1  |           1|       849|
+|3     |vbacc_v1_0_S00_AXI_CFG__GB2  |           1|      1069|
+|4     |vbacc_v1_0_S00_AXI_CFG__GB3  |           1|      1349|
+|5     |vbacc_v1_0_S00_AXI_CFG__GB4  |           1|      1646|
+|6     |vbacc_v1_0_S00_AXI_CFG__GB5  |           1|      2068|
+|7     |vbacc_v1_0_S00_AXI_CFG__GB6  |           1|      2557|
+|8     |vbacc_v1_0_S00_AXI_CFG__GB7  |           1|      2179|
+|9     |vbacc_v1_0_S00_AXI_CFG__GB8  |           1|      2008|
+|10    |vbacc_v1_0_S00_AXI_CFG__GB9  |           1|      2153|
+|11    |vbacc_v1_0_S00_AXI_CFG__GB10 |           1|      2165|
+|12    |vbacc_v1_0__GC0              |           1|       455|
++------+-----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:19 ; elapsed = 00:04:54 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |vbacc_v1_0_S00_AXI_CFG__GB0  |           1|      9010|
+|2     |vbacc_v1_0_S00_AXI_CFG__GB1  |           1|       806|
+|3     |vbacc_v1_0_S00_AXI_CFG__GB2  |           1|      1019|
+|4     |vbacc_v1_0_S00_AXI_CFG__GB3  |           1|      1275|
+|5     |vbacc_v1_0_S00_AXI_CFG__GB4  |           1|      1581|
+|6     |vbacc_v1_0_S00_AXI_CFG__GB5  |           1|      1980|
+|7     |vbacc_v1_0_S00_AXI_CFG__GB6  |           1|      2488|
+|8     |vbacc_v1_0_S00_AXI_CFG__GB7  |           1|      2125|
+|9     |vbacc_v1_0_S00_AXI_CFG__GB8  |           1|      1953|
+|10    |vbacc_v1_0_S00_AXI_CFG__GB9  |           1|      2080|
+|11    |vbacc_v1_0_S00_AXI_CFG__GB10 |           1|      2044|
+|12    |vbacc_v1_0__GC0              |           1|       301|
++------+-----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:25 ; elapsed = 00:05:01 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:25 ; elapsed = 00:05:01 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:26 ; elapsed = 00:05:02 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:26 ; elapsed = 00:05:02 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:26 ; elapsed = 00:05:02 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:26 ; elapsed = 00:05:02 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    35|
+|3     |LUT1   |    15|
+|4     |LUT2   |    34|
+|5     |LUT3   |    76|
+|6     |LUT4   |   530|
+|7     |LUT5   |   308|
+|8     |LUT6   |  5843|
+|9     |MUXF7  |  2176|
+|10    |MUXF8  |  1024|
+|11    |FDRE   | 16653|
+|12    |FDSE   |   114|
+|13    |IBUF   |   111|
+|14    |OBUF   |   240|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------+--------------------------+------+
+|      |Instance                         |Module                    |Cells |
++------+---------------------------------+--------------------------+------+
+|1     |top                              |                          | 27163|
+|2     |  vbacc_v1_0_M00_AXIS_VIDEO_inst |vbacc_v1_0_M00_AXIS_VIDEO |    28|
+|3     |  vbacc_v1_0_M00_AXI_STATUS_inst |vbacc_v1_0_M00_AXI_STATUS |   269|
+|4     |  vbacc_v1_0_S00_AXIS_VIDEO_inst |vbacc_v1_0_S00_AXIS_VIDEO |     4|
+|5     |  vbacc_v1_0_S00_AXI_CFG_inst    |vbacc_v1_0_S00_AXI_CFG    | 26507|
++------+---------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:26 ; elapsed = 00:05:02 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 74 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:26 ; elapsed = 00:05:02 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+Synthesis Optimization Complete : Time (s): cpu = 00:04:26 ; elapsed = 00:05:02 . Memory (MB): peak = 2647.875 ; gain = 2327.820
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3346 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'vbacc_v1_0' is not ideal for floorplanning, since the cellview 'vbacc_v1_0_S00_AXI_CFG' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+88 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:50 ; elapsed = 00:05:27 . Memory (MB): peak = 2647.875 ; gain = 2340.965
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/DEV/Documents/GitHub/OSSDC_SmartCamGen1/HW/ZynqBerry/ip_repo/edit_vbacc_v1_0.runs/synth_1/vbacc_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vbacc_v1_0_utilization_synth.rpt -pb vbacc_v1_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.455 . Memory (MB): peak = 2647.875 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  2 17:47:30 2018...

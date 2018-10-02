@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg225-1" LaunchTime="1506037261">
+<GenRun Id="synth_1" LaunchPart="xc7z045ffv900-3" LaunchTime="1538516508">
   <File Type="PA-TCL" Name="vbacc_v1_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="vbacc_v1_0_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="vbacc_v1_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="vbacc_v1_0.vds"/>
+  <File Type="RDS-UTIL" Name="vbacc_v1_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="vbacc_v1_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="vbacc_v1_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="vbacc_v1_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="vbacc_v1_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/vbacc_1.0/hdl/vbacc_v1_0_M00_AXIS_VIDEO.vhd">
@@ -51,7 +57,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
